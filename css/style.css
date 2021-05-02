@@ -1,0 +1,131 @@
+body, html {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(174, 191, 211);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.content:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url(../assets/back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+    filter: blur(3px);
+    opacity: 0.18;
+}
+
+html {
+    background-color: #13151f;
+}
+
+nav {
+    filter: blur(0px);
+    color: #e8eaed;
+}
+
+nav a {
+    cursor: pointer;
+    color: rgb(174, 191, 211);
+}
+
+nav a:hover {
+    color: #a899fd;
+}
+
+.nav-list-item {
+    font-size: 2.3vh;
+    display: inline-block;
+    margin: 20px 15px 0 15px;
+}
+
+.nav-list {
+    margin-top: 1em;
+    text-align: center;
+}
+
+.nav-list ul {
+    display: inline-block;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 6vh;
+}
+
+#home h3 {
+    font-size: 2.4vh;
+}
+
+#about h1 {
+    font-size: 5vh;
+}
+
+#about p {
+    font-size: 2.5vh;
+}
+
+a {
+    color: rgb(174, 191, 211);
+}
+
+.social-icons {
+    text-align: center;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin: 10px 10px 0 10px;
+    font-size: 4vh;
+}
+
+.social-icons a:hover {
+    color: #a899fd;
+}
+
+#home, #about, #portfolio {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+#home.fade, #about.fade, #portfolio.fade {
+    transform: translate(-50%, 50%);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.periodic-table-box{
+    height: 12em;
+    width: 12em;
+    margin: 10px;
+    border-radius: 25%;
+    background-color: #5d7027;
+    background-image: url(../assets/periodic-logo.png);
+    background-size: contain;
+}
