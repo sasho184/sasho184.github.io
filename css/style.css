@@ -128,7 +128,6 @@ a {
 }
 
 #home.fade, #about.fade, #portfolio.fade {
-    transform: translate(-50%, 50%);
     opacity: 0;
     visibility: hidden;
 }
